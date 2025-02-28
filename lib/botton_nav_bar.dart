@@ -139,8 +139,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
           height: widget.fabHeight ?? 60,
           width: widget.fabWidth ?? 60,
           child: FloatingActionButton(
+            shape: CircleBorder(),
             onPressed: widget.onPressFAB,
             backgroundColor: widget.fabBackGroundColor ?? Colors.green,
+            foregroundColor: Colors.white,
             elevation: widget.fabElevation ?? 20,
             child: widget.fabIcon ??
                 Icon(
